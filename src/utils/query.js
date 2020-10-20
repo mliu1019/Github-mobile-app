@@ -175,3 +175,5 @@ const fetch_profile = () => {
     updated_at: "2020-10-17T08:41:40Z",
   };
 };
+
+export { fetch_repositories, fetch_profile };

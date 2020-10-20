@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  FlatList,
-  ScrollView,
-  Image,
-} from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 import styled from "styled-components";
+import { fetch_repositories } from "../utils/query";
 
-const Root = styled.ScrollView`
-  background-color: papayawhip;
+const Root = styled.View`
+  /*background-color: papayawhip;*/
 `;
 
 const Name = styled.Text`
@@ -37,14 +31,14 @@ const LINE = styled.View`
 //   height: 100;
 // `;
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
   return (
     <Root>
-      <View style={styles.head}>
+      {/* <View style={styles.head}>
         <View style={styles.headTitle}>
           <Text style={styles.titleText}>Profile</Text>
         </View>
-      </View>
+      </View> */}
       <View style={styles.content}>
         <View style={[styles.mg40, styles.name]}>
           <View style={{ flex: 0.48 }}>
@@ -78,26 +72,39 @@ const Profile = () => {
           </LINE>
           <LINE>
             <INFO>Public Repo:</INFO>
-            <VAL>1</VAL>
+            <VAL
+              style={styles.clickable}
+              onPress={() =>
+                navigation.navigate("Repos", {
+                  repos: fetch_repositories(),
+                })
+              }
+            >
+              11111
+            </VAL>
           </LINE>
           <LINE>
             <INFO>Followers:</INFO>
-            <VAL>1</VAL>
+            <VAL style={styles.clickable}>1</VAL>
           </LINE>
           <LINE>
             <INFO>Following:</INFO>
-            <VAL>1</VAL>
+            <VAL style={styles.clickable}>1</VAL>
           </LINE>
         </View>
-        <View>
+        {/* <View>
           <Text>Created on 2020-10-17</Text>
-        </View>
+        </View> */}
       </View>
     </Root>
   );
 };
 
 const styles = StyleSheet.create({
+  clickable: {
+    color: "blue",
+    textDecorationLine: "underline",
+  },
   name: {
     flexDirection: "row",
   },

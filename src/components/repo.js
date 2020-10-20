@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, FlatList, ScrollView } from "react-native";
 import styled from "styled-components";
 
+import { fetch_repositories } from "../utils/query";
+
 const Root = styled.View`
-  background-color: papayawhip;
+  /* background-color: papayawhip; */
 `;
 
 // const Head = styled.View`
@@ -11,13 +13,61 @@ const Root = styled.View`
 //   height: 100;
 // `;
 
-const Repos = () => {
-  useEffect(() => {});
+const RepoTitle = styled.Text`
+  font-size: 24;
+  font-weight: bold;
+`;
+
+const RepoTitleView = styled.View`
+  align-items: center;
+  padding: 4px;
+  border-top-width: 1;
+  border-left-width: 1;
+  border-right-width: 1;
+  height: 40;
+`;
+
+const RepoAuthor = styled.Text`
+  font-size: 18;
+  color: gray;
+`;
+
+const RepoAuthorView = styled.View`
+  align-items: center;
+  padding: 4px;
+  border-top-width: 1;
+  border-left-width: 1;
+  border-right-width: 1;
+  height: 32;
+`;
+
+const RepoDescriptionView = styled.View`
+  padding: 10px;
+  border-top-width: 1;
+  border-bottom-width: 1;
+  border-left-width: 1;
+  border-right-width: 1;
+  height: 62;
+`;
+
+const Repos = ({ route, navigation }) => {
+  const { repos } = route.params;
 
   const repoItem = (repo) => {
     return (
       <View style={styles.repoItem}>
-        <View style={{ flexDirection: "row" }}>
+        <RepoTitleView>
+          <RepoTitle>{repo.name}</RepoTitle>
+        </RepoTitleView>
+        <RepoAuthorView>
+          <RepoAuthor>{repo.owner.login}</RepoAuthor>
+        </RepoAuthorView>
+        <RepoDescriptionView>
+          <Text onPress={() => navigation.navigate("Profile")}>
+            {repo.description}
+          </Text>
+        </RepoDescriptionView>
+        {/* <View style={{ flexDirection: "row" }}>
           <View style={{ flex: 0.4 }}>
             <Text>devops-intro-project</Text>
           </View>
@@ -27,7 +77,7 @@ const Repos = () => {
         </View>
         <View>
           <Text>Descriptions</Text>
-        </View>
+        </View> */}
       </View>
     );
   };
@@ -36,15 +86,15 @@ const Repos = () => {
     <Root>
       <View style={styles.head}>
         <View style={styles.headTitle}>
-          <Text style={styles.titleText}>Repos</Text>
+          <Text style={styles.titleText}>Miranda Liu</Text>
         </View>
-        <View style={styles.headAuthor}>
+        {/* <View style={styles.headAuthor}>
           <Text>Miranda Liu</Text>
-        </View>
+        </View> */}
       </View>
       <ScrollView style={styles.repoList}>
         {/* <FlatList data={"list 1"} /> */}
-        {repoItem()}
+        {repos.map((data) => repoItem(data))}
       </ScrollView>
     </Root>
   );
@@ -52,11 +102,11 @@ const Repos = () => {
 
 const styles = StyleSheet.create({
   repoList: {
-    backgroundColor: "red",
+    // backgroundColor: "red",
   },
   repoItem: {
-    padding: 32,
-    height: 128,
+    padding: 16,
+    height: 150,
   },
   baseText: {
     fontFamily: "Cochin",
@@ -64,14 +114,15 @@ const styles = StyleSheet.create({
   head: {
     flexDirection: "row",
     height: 100,
-    marginTop: 40,
+    // marginTop: 40,
     // marginLeft: 40,
   },
   headTitle: {
     // backgroundColor: "blue",
-    flex: 0.4,
+    flex: 0.8,
+    marginLeft: 32,
     justifyContent: "center",
-    alignItems: "center",
+    // alignItems: "center",
   },
   headAuthor: {
     // backgroundColor: "red",
@@ -82,7 +133,7 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontWeight: "bold",
-    fontSize: 40,
+    fontSize: 32,
   },
 });
 export default Repos;
