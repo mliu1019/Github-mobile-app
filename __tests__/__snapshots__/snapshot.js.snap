@@ -1,5 +1,1016 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders Followers correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "papayawhip",
+        "flexDirection": "row",
+        "height": 100,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 0.8,
+          "justifyContent": "center",
+          "marginLeft": 32,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 32,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        MirandaLiu1019
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars1.githubusercontent.com/u/72242664?s=200&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              tatthien
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              Web Developer
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars0.githubusercontent.com/u/11194525?s=200&u=c9b6aa575dcf44da04408bcc5a0328432f4a94a2&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              maulayyacyber
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              
+    Creator @SantriKoding-com  
+
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars2.githubusercontent.com/u/67175385?s=200&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              raviyaswanth
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars1.githubusercontent.com/u/60230552?s=200&u=6894fcad285d22dd1c2de00f11fd05da6e865f06&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              JoaoFelixx
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              Sou desenvolvedor Full-Stack, apaixonado por tecnologia da informação. Sempre aprendendo coisas novas com objetivo de ser um bom profissional. 
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars0.githubusercontent.com/u/9191921?s=200&u=3739ffa74927c8564dfe838c6cf48c9b957b6daf&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              gdkv
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars3.githubusercontent.com/u/69043539?s=200&u=88f1080270c209e0ce9bc505ddb927143891cdc0&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              LaithDribaty
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars0.githubusercontent.com/u/18176078?s=200&u=f9c3a2338d3df322ba1f9e7a082eafe2677c2e56&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              Claessens14
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              Engineering Systems and Computing student at the University  of  Guelph.
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars1.githubusercontent.com/u/55347822?s=200&u=6393f0ba5dfd8deba886812e07f6d992f6c4c329&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              asadkhanek
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              
+    
+muhammad asad khan is a Senior year bachelor’s student of Software Engineering virtual university of pakistan 
+
+
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars3.githubusercontent.com/u/12392986?s=200&u=a63d0d1c674d0ae4a4480726dcd2a087d0b63cf6&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              xhepa112
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginLeft": 32,
+              "marginRight": 32,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 150,
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://avatars0.githubusercontent.com/u/18063007?s=200&u=c228b1c1ed19339ebce377956cd2b1c32cf3c857&v=4",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 64,
+                    "width": 64,
+                  },
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                  "marginLeft": 32,
+                  "marginRight": 64,
+                },
+              ]
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  },
+                ]
+              }
+            >
+              qingpizi
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "gray",
+                    "marginTop": 10,
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`renders Following correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "papayawhip",
+        "flexDirection": "row",
+        "height": 100,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 0.8,
+          "justifyContent": "center",
+          "marginLeft": 32,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 32,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        MirandaLiu1019
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView>
+    <View />
+  </RCTScrollView>
+</View>
+`;
+
 exports[`renders HOME correctly 1`] = `
 <View
   style={
@@ -110,7 +1121,7 @@ exports[`renders Header correctly 1`] = `
         }
       }
     >
-      Miranda
+      MirandaLiu1019
     </Text>
   </View>
 </View>
@@ -434,5 +1445,952 @@ exports[`renders Profile correctly 1`] = `
       </View>
     </View>
   </View>
+</View>
+`;
+
+exports[`renders Repos correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "papayawhip",
+        "flexDirection": "row",
+        "height": 100,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 0.8,
+          "justifyContent": "center",
+          "marginLeft": 32,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 32,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        MirandaLiu1019
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView
+    style={Object {}}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab3
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Project skeleton for Lab 3.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab4
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lab 4 starter code.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab5
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lab5 starter code.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab7
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lab7 starter code.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            fa17-hw4-template
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Template files for FA17 Homework 4 (dictionaries)
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab8
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lab8 starter code.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab9
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lab9 starter code.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab10
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lab10 starter code.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            Lab11
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lab11 starter code.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 150,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 40,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+            sockets-lecture
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 32,
+                "paddingBottom": 4,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 4,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "gray",
+                  "fontSize": 18,
+                },
+              ]
+            }
+          >
+            MirandaLiu1019
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderLeftWidth": 1,
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+                "height": 62,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text>
+            Lecture 13, Fall 2017
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
 </View>
 `;

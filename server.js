@@ -94,4 +94,6 @@ const fetch_following = (login) => {
   return instance.post(API_URL, JSON.stringify({ query }));
 };
 
-fetch_profile("MirandaLiu1019").then((resp) => console.log(resp.data.data));
+fetch_followers("fabpot").then((resp) =>
+  console.log(resp.data.data.user.followers.nodes)
+);
