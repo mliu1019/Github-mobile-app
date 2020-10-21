@@ -1,6 +1,6 @@
 import React from "react";
 import { TouchableHighlight, ScrollView } from "react-native";
-import styled from "styled-components";
+import styled from "styled-components/native";
 import Header from "./shared/header";
 import { fetch_profile } from "../utils/query";
 

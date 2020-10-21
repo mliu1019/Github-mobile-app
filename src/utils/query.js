@@ -4,7 +4,7 @@ const API_URL = "https://api.github.com/graphql";
 const instance = axios.create({
   headers: {
     "Content-Type": "application/json",
-    Authorization: "bearer a6f3f8e3d403b3850a59b13d5dad3ea7826a1b6a",
+    Authorization: `bearer ${API_KEY}`,
   },
 });
 

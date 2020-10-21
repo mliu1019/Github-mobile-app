@@ -8,7 +8,26 @@ const instance = axios.create({
   },
 });
 
-const fetch_profile = (login = "MirandaLiu1019") => {
+const fetch_repositories = (login) => {
+  const query = `
+    query { 
+      user(login:"${login}") {
+        repositories (privacy: PUBLIC, first:10) {
+          nodes {
+            name
+            owner {
+              login
+            }
+            description
+          }
+        }
+      }
+    }
+  `;
+  return instance.post(API_URL, JSON.stringify({ query }));
+};
+
+const fetch_profile = (login) => {
   const query = `
     query { 
       user(login:"${login}") { 
@@ -16,7 +35,7 @@ const fetch_profile = (login = "MirandaLiu1019") => {
         name
         login
         bio
-        url 
+        url
         email
         repositories (privacy: PUBLIC, first:100) {
           totalCount
@@ -40,6 +59,24 @@ const fetch_profile = (login = "MirandaLiu1019") => {
   `;
   return instance.post(API_URL, JSON.stringify({ query }));
 };
+
+const fetch_followers = (login) => {
+  const query = `
+    query { 
+      user(login:"${login}") {
+        followers (first:10) {
+          nodes {
+            avatarUrl (size:200)
+            login
+            bio
+          }
+        }
+      }
+    }
+  `;
+  return instance.post(API_URL, JSON.stringify({ query }));
+};
+
 const fetch_following = (login) => {
   const query = `
     query { 
@@ -56,6 +93,5 @@ const fetch_following = (login) => {
   `;
   return instance.post(API_URL, JSON.stringify({ query }));
 };
-fetch_following().then((resp) =>
-  console.log(resp.data.data.user.followers.nodes)
-);
+
+fetch_profile("MirandaLiu1019").then((resp) => console.log(resp.data.data));

@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
-import styled from "styled-components";
+import styled from "styled-components/native";
 import {
   fetch_repositories,
   fetch_followers,

@@ -1,0 +1,438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders HOME correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "35%",
+      },
+    ]
+  }
+>
+  <Text
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "blue",
+          "fontSize": 32,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+        },
+      ]
+    }
+  >
+    Profile
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "blue",
+          "fontSize": 32,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+        },
+      ]
+    }
+  >
+    Repos
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "blue",
+          "fontSize": 32,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+        },
+      ]
+    }
+  >
+    Followers
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "blue",
+          "fontSize": 32,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+        },
+      ]
+    }
+  >
+    Following
+  </Text>
+</View>
+`;
+
+exports[`renders Header correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "papayawhip",
+      "flexDirection": "row",
+      "height": 100,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 0.8,
+        "justifyContent": "center",
+        "marginLeft": 32,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 32,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Miranda
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders Profile correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+        "height": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "marginLeft": 32,
+            "marginRight": 32,
+            "marginTop": 32,
+          },
+          Object {
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 0.48,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://avatars3.githubusercontent.com/u/32145505?s=200&v=4",
+            }
+          }
+          style={
+            Object {
+              "height": 64,
+              "width": 64,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 20,
+                },
+              ]
+            }
+          >
+             
+            Miranda Liu
+          </Text>
+        </View>
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 20,
+                },
+                Object {
+                  "fontWeight": "bold",
+                },
+              ]
+            }
+          >
+             
+            MirandaLiu1019
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "marginLeft": 32,
+            "marginRight": 32,
+            "marginTop": 32,
+          },
+          Object {
+            "borderWidth": 1.6,
+            "height": 100,
+            "padding": 6,
+          },
+        ]
+      }
+    >
+      <Text>
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "marginLeft": 32,
+            "marginRight": 32,
+            "marginTop": 32,
+          },
+          Object {
+            "flexDirection": "col",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Website:
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "left": 128,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+          https://github.com/MirandaLiu1019
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Email:
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "left": 128,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Public Repo:
+        </Text>
+        <Text
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "left": 128,
+                "position": "absolute",
+              },
+              Object {
+                "color": "blue",
+                "textDecorationLine": "underline",
+              },
+            ]
+          }
+        >
+          13
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Followers:
+        </Text>
+        <Text
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "left": 128,
+                "position": "absolute",
+              },
+              Object {
+                "color": "blue",
+                "textDecorationLine": "underline",
+              },
+            ]
+          }
+        >
+          0
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Following:
+        </Text>
+        <Text
+          onPress={[Function]}
+          style={
+            Array [
+              Object {
+                "left": 128,
+                "position": "absolute",
+              },
+              Object {
+                "color": "blue",
+                "textDecorationLine": "underline",
+              },
+            ]
+          }
+        >
+          0
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
