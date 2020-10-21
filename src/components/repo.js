@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, FlatList, ScrollView } from "react-native";
 import styled from "styled-components";
-
-import { fetch_repositories } from "../utils/query";
-
+import Header from "./shared/header";
 const Root = styled.View`
   /* background-color: papayawhip; */
 `;
@@ -51,7 +49,7 @@ const RepoDescriptionView = styled.View`
 `;
 
 const Repos = ({ route, navigation }) => {
-  const { repos } = route.params;
+  const { login, repos } = route.params;
 
   const repoItem = (repo) => {
     return (
@@ -63,37 +61,16 @@ const Repos = ({ route, navigation }) => {
           <RepoAuthor>{repo.owner.login}</RepoAuthor>
         </RepoAuthorView>
         <RepoDescriptionView>
-          <Text onPress={() => navigation.navigate("Profile")}>
-            {repo.description}
-          </Text>
+          <Text>{repo.description}</Text>
         </RepoDescriptionView>
-        {/* <View style={{ flexDirection: "row" }}>
-          <View style={{ flex: 0.4 }}>
-            <Text>devops-intro-project</Text>
-          </View>
-          <View style={{ flex: 0.4 }}>
-            <Text>Miranda Liu</Text>
-          </View>
-        </View>
-        <View>
-          <Text>Descriptions</Text>
-        </View> */}
       </View>
     );
   };
 
   return (
     <Root>
-      <View style={styles.head}>
-        <View style={styles.headTitle}>
-          <Text style={styles.titleText}>Miranda Liu</Text>
-        </View>
-        {/* <View style={styles.headAuthor}>
-          <Text>Miranda Liu</Text>
-        </View> */}
-      </View>
+      <Header login={login} />
       <ScrollView style={styles.repoList}>
-        {/* <FlatList data={"list 1"} /> */}
         {repos.map((data) => repoItem(data))}
       </ScrollView>
     </Root>
@@ -111,29 +88,12 @@ const styles = StyleSheet.create({
   baseText: {
     fontFamily: "Cochin",
   },
-  head: {
-    flexDirection: "row",
-    height: 100,
-    // marginTop: 40,
-    // marginLeft: 40,
-  },
-  headTitle: {
-    // backgroundColor: "blue",
-    flex: 0.8,
-    marginLeft: 32,
-    justifyContent: "center",
-    // alignItems: "center",
-  },
   headAuthor: {
     // backgroundColor: "red",
     flex: 0.5,
     justifyContent: "center",
     marginTop: 16,
     // alignItems: "center",
-  },
-  titleText: {
-    fontWeight: "bold",
-    fontSize: 32,
   },
 });
 export default Repos;

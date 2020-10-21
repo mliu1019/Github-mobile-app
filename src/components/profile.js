@@ -1,7 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import styled from "styled-components";
-import { fetch_repositories } from "../utils/query";
+import {
+  fetch_repositories,
+  fetch_followers,
+  fetch_following,
+} from "../utils/query";
 
 const Root = styled.View`
   /*background-color: papayawhip;*/
@@ -31,7 +35,8 @@ const LINE = styled.View`
 //   height: 100;
 // `;
 
-const Profile = ({ navigation }) => {
+const Profile = ({ route, navigation }) => {
+  const { login, profile } = route.params;
   return (
     <Root>
       {/* <View style={styles.head}>
@@ -45,51 +50,82 @@ const Profile = ({ navigation }) => {
             <Image
               style={styles.avatar}
               source={{
-                uri: "https://avatars3.githubusercontent.com/u/47225309?v=4",
+                uri: profile.avatarUrl,
               }}
             />
           </View>
           <View style={{ justifyContent: "center", alignItems: "center" }}>
             <View>
-              <Name> Name</Name>
+              <Name> {profile.name}</Name>
             </View>
             <View>
-              <Name style={{ fontWeight: "bold" }}> Github User</Name>
+              <Name style={{ fontWeight: "bold" }}> {profile.login}</Name>
             </View>
           </View>
         </View>
         <View style={[styles.mg40, styles.bio]}>
-          <Text>This person does not have a bio</Text>
+          <Text>
+            {profile.bio === null
+              ? "This person does not have a bio."
+              : profile.bio}
+          </Text>
         </View>
         <View style={[styles.mg40, { flexDirection: "col" }]}>
           <LINE>
             <INFO>Website:</INFO>
-            <VAL>https://github.com/mliu1019</VAL>
+            <VAL>{profile.url}</VAL>
           </LINE>
           <LINE>
             <INFO>Email:</INFO>
-            <VAL>minerl2@illinois.edu</VAL>
+            <VAL>{profile.email}</VAL>
           </LINE>
           <LINE>
             <INFO>Public Repo:</INFO>
             <VAL
               style={styles.clickable}
               onPress={() =>
-                navigation.navigate("Repos", {
-                  repos: fetch_repositories(),
+                fetch_repositories(profile.login).then((resp) => {
+                  navigation.navigate("Repos", {
+                    login: profile.login,
+                    repos: resp.data.data.user.repositories.nodes,
+                  });
                 })
               }
             >
-              11111
+              {profile.repositories.totalCount}
             </VAL>
           </LINE>
           <LINE>
             <INFO>Followers:</INFO>
-            <VAL style={styles.clickable}>1</VAL>
+            <VAL
+              onPress={() =>
+                fetch_followers(profile.login).then((resp) => {
+                  navigation.navigate("Follower", {
+                    login: profile.login,
+                    users: resp.data.data.user.followers.nodes,
+                  });
+                })
+              }
+              style={styles.clickable}
+            >
+              {profile.followers.totalCount}
+            </VAL>
           </LINE>
           <LINE>
             <INFO>Following:</INFO>
-            <VAL style={styles.clickable}>1</VAL>
+            <VAL
+              onPress={() =>
+                fetch_following(profile.login).then((resp) => {
+                  navigation.navigate("Following", {
+                    login: profile.login,
+                    users: resp.data.data.user.following.nodes,
+                  });
+                })
+              }
+              style={styles.clickable}
+            >
+              {profile.following.totalCount}
+            </VAL>
           </LINE>
         </View>
         {/* <View>
