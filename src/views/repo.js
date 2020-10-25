@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, FlatList, ScrollView } from "react-native";
+import React from "react";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 import styled from "styled-components/native";
 import Header from "./shared/header";
 const Root = styled.View`

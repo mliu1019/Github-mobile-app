@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableHighlight, ScrollView } from "react-native";
 import styled from "styled-components/native";
 import Header from "./shared/header";
-import { fetch_profile } from "../utils/query";
+import { profile_model } from "../models/profile";
 
 const Root = styled.View`
   /* background-color: papayawhip; */
@@ -50,11 +50,14 @@ const Follow = ({ route, navigation }) => {
         <User>
           <TouchableHighlight
             onPress={() =>
-              fetch_profile(user.login).then((resp) => {
-                navigation.navigate("Profile", {
-                  profile: resp.data.data.user,
-                });
-              })
+              profile_model.get(user.login).then(
+                (resp) => {
+                  navigation.navigate("Profile", {
+                    profile: resp.data.data.user,
+                  });
+                },
+                (err) => {}
+              )
             }
           >
             <Avatar
@@ -67,12 +70,15 @@ const Follow = ({ route, navigation }) => {
           <Info>
             <Login
               onPress={() =>
-                fetch_profile(user.login).then((resp) => {
-                  navigation.navigate("Profile", {
-                    login: user.login,
-                    profile: resp.data.data.user,
-                  });
-                })
+                profile_model.get(user.login).then(
+                  (resp) => {
+                    navigation.navigate("Profile", {
+                      login: user.login,
+                      profile: resp.data.data.user,
+                    });
+                  },
+                  (err) => {}
+                )
               }
             >
               {user.login}

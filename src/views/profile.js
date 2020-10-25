@@ -1,11 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import styled from "styled-components/native";
-import {
-  fetch_repositories,
-  fetch_followers,
-  fetch_following,
-} from "../utils/query";
+
+import { repo_model } from "../models/repos";
+import { follower_model } from "../models/follower";
+import { following_model } from "../models/following";
 
 const Root = styled.View`
   /*background-color: papayawhip;*/
@@ -84,12 +83,15 @@ const Profile = ({ route, navigation }) => {
             <VAL
               style={styles.clickable}
               onPress={() =>
-                fetch_repositories(profile.login).then((resp) => {
-                  navigation.navigate("Repos", {
-                    login: profile.login,
-                    repos: resp.data.data.user.repositories.nodes,
-                  });
-                })
+                repo_model.get(profile.login).then(
+                  (resp) => {
+                    navigation.navigate("Repos", {
+                      login: profile.login,
+                      repos: resp.data.data.user.repositories.nodes,
+                    });
+                  },
+                  (err) => {}
+                )
               }
             >
               {profile.repositories.totalCount}
@@ -99,12 +101,15 @@ const Profile = ({ route, navigation }) => {
             <INFO>Followers:</INFO>
             <VAL
               onPress={() =>
-                fetch_followers(profile.login).then((resp) => {
-                  navigation.navigate("Follower", {
-                    login: profile.login,
-                    users: resp.data.data.user.followers.nodes,
-                  });
-                })
+                follower_model.get(profile.login).then(
+                  (resp) => {
+                    navigation.navigate("Follower", {
+                      login: profile.login,
+                      users: resp.data.data.user.followers.nodes,
+                    });
+                  },
+                  (err) => {}
+                )
               }
               style={styles.clickable}
             >
@@ -115,12 +120,15 @@ const Profile = ({ route, navigation }) => {
             <INFO>Following:</INFO>
             <VAL
               onPress={() =>
-                fetch_following(profile.login).then((resp) => {
-                  navigation.navigate("Following", {
-                    login: profile.login,
-                    users: resp.data.data.user.following.nodes,
-                  });
-                })
+                following_model.get(profile.login).then(
+                  (resp) => {
+                    navigation.navigate("Following", {
+                      login: profile.login,
+                      users: resp.data.data.user.following.nodes,
+                    });
+                  },
+                  (err) => {}
+                )
               }
               style={styles.clickable}
             >

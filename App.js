@@ -4,10 +4,10 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Home from "./src/components/home";
-import Repos from "./src/components/repo";
-import Profile from "./src/components/profile";
-import Follow from "./src/components/follow";
+import Home from "./src/views/home";
+import Repos from "./src/views/repo";
+import Profile from "./src/views/profile";
+import Follow from "./src/views/follow";
 
 const Stack = createStackNavigator();
 

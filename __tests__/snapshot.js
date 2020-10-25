@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Home from "../src/components/home";
-import Profile from "../src/components/profile";
-import Repos from "../src/components/repo";
-import Follow from "../src/components/follow";
-import Header from "../src/components/shared/header";
+import Home from "../src/views/home";
+import Profile from "../src/views/profile";
+import Repos from "../src/views/repo";
+import Follow from "../src/views/follow";
+import Header from "../src/views/shared/header";
 
 test("renders HOME correctly", () => {
   const tree = renderer.create(<Home />).toJSON();
