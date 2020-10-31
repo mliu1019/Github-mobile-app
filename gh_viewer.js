@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const profile_model = require("./src/models/profile");
 const follower_model = require("./src/models/follower");
 const following_model = require("./src/models/following");
