@@ -2,7 +2,8 @@ import React from "react";
 import { TouchableHighlight, ScrollView } from "react-native";
 import styled from "styled-components/native";
 import Header from "./shared/header";
-import { profile_model } from "../models/profile";
+
+const profile_model = require("../models/profile");
 
 const Root = styled.View`
   /* background-color: papayawhip; */

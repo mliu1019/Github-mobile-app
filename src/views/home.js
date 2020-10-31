@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components/native";
 
-import { repo_model } from "../models/repos";
-import { profile_model } from "../models/profile";
-import { follower_model } from "../models/follower";
-import { following_model } from "../models/following";
+const profile_model = require("../models/profile");
+const follower_model = require("../models/follower");
+const following_model = require("../models/following");
+const repo_model = require("../models/repos");
 
 const Root = styled.View`
   margin-left: auto;

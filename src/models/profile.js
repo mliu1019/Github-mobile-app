@@ -1,8 +1,8 @@
-import instance from "./base";
+const base = require("./base");
+const instance = base.instance;
 
-const profile_model = {
-  get: (login) => {
-    const query = `
+const get = (login) => {
+  const query = `
         query { 
         user(login:"${login}") { 
             avatarUrl (size:200)
@@ -31,8 +31,8 @@ const profile_model = {
         }
         }
     `;
-    return instance.post("/graphql", JSON.stringify({ query }));
-  },
+  return instance.post("/graphql", JSON.stringify({ query }));
 };
 
-export { profile_model };
+// export { profile_model };
+exports.get = get;

@@ -1,8 +1,8 @@
-import instance from "./base";
+const base = require("./base");
+const instance = base.instance;
 
-const repo_model = {
-  get: (login) => {
-    const query = `
+const get = (login) => {
+  const query = `
         query { 
           user(login:"${login}") {
             repositories (privacy: PUBLIC, first:10) {
@@ -17,8 +17,7 @@ const repo_model = {
           }
         }
       `;
-    return instance.post("/graphql", JSON.stringify({ query }));
-  },
+  return instance.post("/graphql", JSON.stringify({ query }));
 };
 
-export { repo_model };
+exports.get = get;
