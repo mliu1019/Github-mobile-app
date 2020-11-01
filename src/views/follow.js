@@ -20,6 +20,7 @@ const UserRoot = styled.View`
   margin-left: 32px;
   margin-right: 32px;
 `;
+UserRoot.displayName = "UserRoot";
 
 const User = styled.View`
   padding: 16px;
@@ -38,6 +39,7 @@ const Login = styled.Text`
   font-size: 24;
   font-weight: bold;
 `;
+Login.displayName = "Login";
 
 const Bio = styled.Text`
   margin-top: 10;
@@ -47,7 +49,7 @@ const Bio = styled.Text`
 const Follow = ({ route, navigation }) => {
   const { login, type } = route.params;
 
-  const [users, setUsers] = useState();
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     if (type === "following") {
@@ -99,7 +101,7 @@ const Follow = ({ route, navigation }) => {
   return (
     <Root>
       <Header login={login} />
-      {users && <ScrollView>{users.map((data) => userItem(data))}</ScrollView>}
+      <ScrollView>{users.map((data) => userItem(data))}</ScrollView>
     </Root>
   );
 };

@@ -21,6 +21,7 @@ const VAL = styled.Text`
   position: absolute;
   left: 128;
 `;
+VAL.displayName = "VAL";
 
 const LINE = styled.View`
   flex-direction: row;
