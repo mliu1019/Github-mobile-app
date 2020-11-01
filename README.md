@@ -16,6 +16,22 @@ Assignment 3 of CS 242 Class Fall 2020. The assignment implements a React-Native
 * `npm test`
   * The command runs all tests under /__tests__ folder. 
 
+
+## Command Line Tool
+```
+# Link the command line tool
+$ npm link
+
+# Usage: gh-viewer [page] [login]
+$ gh-viewer profile octocat
+
+    login: octocat
+    name: The Octocat
+    email: octocat@github.com
+    repositories: 203
+
+```
+
 ## Folder
 App data.
 ```
