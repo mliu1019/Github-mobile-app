@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import styled from "styled-components/native";
 
-const follower_model = require("../models/follower");
-const following_model = require("../models/following");
-const repo_model = require("../models/repos");
+const profile_model = require("../models/profile");
 
 const Root = styled.View`
   /*background-color: papayawhip;*/
@@ -35,7 +33,23 @@ const LINE = styled.View`
 // `;
 
 const Profile = ({ route, navigation }) => {
-  const { login, profile } = route.params;
+  const { login } = route.params;
+  const [profile, setProfile] = useState();
+
+  useEffect(() => {
+    // async function componentload() {
+    //   let resp = await profile_model.get(login);
+    //   setProfile(resp.data.data.user);
+    // }
+    // componentload();
+    profile_model.get(login).then(
+      (resp) => {
+        setProfile(resp.data.data.user);
+      },
+      (err) => {}
+    );
+  }, []);
+
   return (
     <Root>
       {/* <View style={styles.head}>
@@ -43,103 +57,89 @@ const Profile = ({ route, navigation }) => {
           <Text style={styles.titleText}>Profile</Text>
         </View>
       </View> */}
-      <View style={styles.content}>
-        <View style={[styles.mg40, styles.name]}>
-          <View style={{ flex: 0.48 }}>
-            <Image
-              style={styles.avatar}
-              source={{
-                uri: profile.avatarUrl,
-              }}
-            />
-          </View>
-          <View style={{ justifyContent: "center", alignItems: "center" }}>
-            <View>
-              <Name> {profile.name}</Name>
+      {profile && (
+        <View style={styles.content}>
+          <View style={[styles.mg40, styles.name]}>
+            <View style={{ flex: 0.48 }}>
+              <Image
+                style={styles.avatar}
+                source={{
+                  uri: profile.avatarUrl,
+                }}
+              />
             </View>
-            <View>
-              <Name style={{ fontWeight: "bold" }}> {profile.login}</Name>
+            <View style={{ justifyContent: "center", alignItems: "center" }}>
+              <View>
+                <Name> {profile.name}</Name>
+              </View>
+              <View>
+                <Name style={{ fontWeight: "bold" }}> {profile.login}</Name>
+              </View>
             </View>
           </View>
-        </View>
-        <View style={[styles.mg40, styles.bio]}>
-          <Text>
-            {profile.bio === null
-              ? "This person does not have a bio."
-              : profile.bio}
-          </Text>
-        </View>
-        <View style={[styles.mg40, { flexDirection: "col" }]}>
-          <LINE>
-            <INFO>Website:</INFO>
-            <VAL>{profile.url}</VAL>
-          </LINE>
-          <LINE>
-            <INFO>Email:</INFO>
-            <VAL>{profile.email}</VAL>
-          </LINE>
-          <LINE>
-            <INFO>Public Repo:</INFO>
-            <VAL
-              style={styles.clickable}
-              onPress={() =>
-                repo_model.get(profile.login).then(
-                  (resp) => {
-                    navigation.navigate("Repos", {
-                      login: profile.login,
-                      repos: resp.data.data.user.repositories.nodes,
-                    });
-                  },
-                  (err) => {}
-                )
-              }
-            >
-              {profile.repositories.totalCount}
-            </VAL>
-          </LINE>
-          <LINE>
-            <INFO>Followers:</INFO>
-            <VAL
-              onPress={() =>
-                follower_model.get(profile.login).then(
-                  (resp) => {
-                    navigation.navigate("Follower", {
-                      login: profile.login,
-                      users: resp.data.data.user.followers.nodes,
-                    });
-                  },
-                  (err) => {}
-                )
-              }
-              style={styles.clickable}
-            >
-              {profile.followers.totalCount}
-            </VAL>
-          </LINE>
-          <LINE>
-            <INFO>Following:</INFO>
-            <VAL
-              onPress={() =>
-                following_model.get(profile.login).then(
-                  (resp) => {
-                    navigation.navigate("Following", {
-                      login: profile.login,
-                      users: resp.data.data.user.following.nodes,
-                    });
-                  },
-                  (err) => {}
-                )
-              }
-              style={styles.clickable}
-            >
-              {profile.following.totalCount}
-            </VAL>
-          </LINE>
-        </View>
-        {/* <View>
+          <View style={[styles.mg40, styles.bio]}>
+            <Text>
+              {profile.bio === ""
+                ? "This person does not have a bio."
+                : profile.bio}
+            </Text>
+          </View>
+          <View style={[styles.mg40, { flexDirection: "col" }]}>
+            <LINE>
+              <INFO>Website:</INFO>
+              <VAL>{profile.url}</VAL>
+            </LINE>
+            <LINE>
+              <INFO>Email:</INFO>
+              <VAL>{profile.email}</VAL>
+            </LINE>
+            <LINE>
+              <INFO>Public Repo:</INFO>
+              <VAL
+                style={styles.clickable}
+                onPress={() =>
+                  navigation.navigate("Repos", {
+                    login: profile.login,
+                  })
+                }
+              >
+                {profile.repositories.totalCount}
+              </VAL>
+            </LINE>
+            <LINE>
+              <INFO>Followers:</INFO>
+              <VAL
+                onPress={() =>
+                  navigation.navigate("Follower", {
+                    login: profile.login,
+                    type: "follower",
+                  })
+                }
+                style={styles.clickable}
+              >
+                {profile.followers.totalCount}
+              </VAL>
+            </LINE>
+            <LINE>
+              <INFO>Following:</INFO>
+              <VAL
+                onPress={() =>
+                  navigation.navigate("Following", {
+                    login: profile.login,
+                    type: "following",
+                  })
+                }
+                style={styles.clickable}
+              >
+                {profile.following.totalCount}
+              </VAL>
+            </LINE>
+          </View>
+          {/* <View>
           <Text>Created on 2020-10-17</Text>
         </View> */}
-      </View>
+        </View>
+      )}
     </Root>
   );
 };

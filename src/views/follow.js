@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TouchableHighlight, ScrollView } from "react-native";
 import styled from "styled-components/native";
 import Header from "./shared/header";
 
-const profile_model = require("../models/profile");
+const follower_model = require("../models/follower");
+const following_model = require("../models/following");
 
 const Root = styled.View`
   /* background-color: papayawhip; */
@@ -44,21 +45,31 @@ const Bio = styled.Text`
 `;
 
 const Follow = ({ route, navigation }) => {
-  const { login, users } = route.params;
+  const { login, type } = route.params;
+
+  const [users, setUsers] = useState();
+
+  useEffect(() => {
+    if (type === "following") {
+      following_model.get(login).then((resp) => {
+        setUsers(resp.data.data.user.following.nodes);
+      });
+    } else if (type === "follower") {
+      follower_model.get(login).then((resp) => {
+        setUsers(resp.data.data.user.followers.nodes);
+      });
+    }
+  });
+
   const userItem = (user) => {
     return (
       <UserRoot>
         <User>
           <TouchableHighlight
             onPress={() =>
-              profile_model.get(user.login).then(
-                (resp) => {
-                  navigation.navigate("Profile", {
-                    profile: resp.data.data.user,
-                  });
-                },
-                (err) => {}
-              )
+              navigation.navigate("Profile", {
+                login: user.login,
+              })
             }
           >
             <Avatar
@@ -71,15 +82,9 @@ const Follow = ({ route, navigation }) => {
           <Info>
             <Login
               onPress={() =>
-                profile_model.get(user.login).then(
-                  (resp) => {
-                    navigation.navigate("Profile", {
-                      login: user.login,
-                      profile: resp.data.data.user,
-                    });
-                  },
-                  (err) => {}
-                )
+                navigation.navigate("Profile", {
+                  login: user.login,
+                })
               }
             >
               {user.login}
@@ -94,7 +99,7 @@ const Follow = ({ route, navigation }) => {
   return (
     <Root>
       <Header login={login} />
-      <ScrollView>{users.map((data) => userItem(data))}</ScrollView>
+      {users && <ScrollView>{users.map((data) => userItem(data))}</ScrollView>}
     </Root>
   );
 };

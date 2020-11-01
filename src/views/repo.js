@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import styled from "styled-components/native";
 import Header from "./shared/header";
+const repo_model = require("../models/repos");
+
 const Root = styled.View`
   /* background-color: papayawhip; */
 `;
@@ -49,7 +51,18 @@ const RepoDescriptionView = styled.View`
 `;
 
 const Repos = ({ route, navigation }) => {
-  const { login, repos } = route.params;
+  const { login } = route.params;
+
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    repo_model.get(login).then(
+      (resp) => {
+        setRepos(resp.data.data.user.repositories.nodes);
+      },
+      (err) => {}
+    );
+  });
 
   const repoItem = (repo) => {
     return (
