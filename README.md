@@ -1,6 +1,6 @@
-# FA20 CS242 Assignment 3
+# GitHub Mobile App
 
-Assignment 3 of CS 242 Class Fall 2020. The assignment implements a React-Native App that presentsuser's profile and repository info gathered using Github's API.
+The project implements a React-Native App that presentsuser's profile and repository info gathered using Github's API.
 
 ## Tool
 * [XCode](https://developer.apple.com/xcode/) 
